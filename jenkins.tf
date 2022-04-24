@@ -1,7 +1,7 @@
 node {
     stage('terraform deployment'){
 	sh "ls -lart"
-	sh "sudo cp -R /home/lttsansible/terraform1/main.tf ."
+	sh "sudo cp -R /home/lttsansible/Module/template.tf"
 	sh "pwd"
 	sh "ls -lart"
     sh "terraform init"
